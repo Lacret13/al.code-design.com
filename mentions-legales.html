@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentions légales — al.code-design</title>
+<meta name="description" content="Mentions légales, politique de confidentialité et RGPD du site al.code-design.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f2240'/%3E%3Ctext x='8' y='44' style='font-family:Georgia,serif;font-weight:900;font-size:32px;fill:%23ffffff'%3Eal%3C/text%3E%3Ccircle cx='42' cy='40' r='5' fill='%23f4600c'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#f4600c">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --orange: #f4600c;
+  --orange-light: #ff8040;
+  --orange-pale: #fff4ee;
+  --navy: #0f2240;
+  --navy-soft: #e8eef8;
+  --green: #16a34a;
+  --white: #ffffff;
+  --off: #fafaf8;
+  --text: #1a1a2e;
+  --muted: #525866;
+  --border: #e5e7eb;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  background: var(--white);
+  color: var(--text);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.skip-link {
+  position: absolute; top: -100px; left: 16px; z-index: 9999;
+  background: var(--navy); color: #fff;
+  padding: .8rem 1.4rem; border-radius: 0 0 10px 10px;
+  font-weight: 700; font-size: .9rem; text-decoration: none;
+  transition: top .25s;
+}
+.skip-link:focus { top: 0; outline: 3px solid var(--orange); outline-offset: 2px; }
+:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; border-radius: 4px; }
+
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(244,96,12,.12);
+  padding: 0 4rem;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 68px;
+  box-shadow: 0 2px 16px rgba(15,34,64,.06);
+}
+.nav-logo svg { height: 26px; }
+.nav-back {
+  background: transparent; color: var(--navy);
+  border: 1.5px solid var(--border);
+  padding: .55rem 1.3rem; border-radius: 8px;
+  font-family: inherit; font-size: .83rem; font-weight: 600;
+  text-decoration: none;
+  transition: all .25s;
+}
+.nav-back:hover { border-color: var(--orange); color: var(--orange); }
+
+main {
+  max-width: 760px;
+  margin: 4rem auto;
+  padding: 0 2rem 4rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+.section-tag {
+  display:inline-flex; align-items:center; gap:.5rem;
+  background:var(--orange-pale); color:var(--orange);
+  font-size:.7rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  padding:.3rem .9rem; border-radius:100px; margin-bottom:1rem;
+}
+h1 {
+  font-family: 'Fraunces', serif; font-weight: 900;
+  font-size: clamp(2rem, 4vw, 3rem); color: var(--navy);
+  letter-spacing: -.03em; line-height: 1.1;
+  margin-bottom: .8rem;
+}
+.subtitle {
+  color: var(--muted); font-size: .95rem; max-width: 500px; margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Fraunces', serif; font-weight: 900;
+  font-size: 1.5rem; color: var(--navy);
+  letter-spacing: -.02em; line-height: 1.2;
+  margin: 2.5rem 0 1rem;
+  padding-top: 1rem;
+}
+h2:first-of-type { margin-top: 0; padding-top: 0; }
+
+h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700;
+  font-size: 1.05rem; color: var(--navy);
+  margin: 1.5rem 0 .6rem;
+}
+
+p { margin-bottom: 1rem; color: var(--text); font-size: .95rem; }
+strong { color: var(--navy); font-weight: 700; }
+
+a { color: var(--orange); text-decoration: underline; text-underline-offset: 3px; }
+a:hover { color: var(--orange-light); }
+
+ul {
+  list-style: none; padding-left: 0; margin-bottom: 1.2rem;
+}
+ul li {
+  position: relative; padding-left: 1.4rem; margin-bottom: .5rem;
+  font-size: .92rem; color: var(--text); line-height: 1.65;
+}
+ul li::before {
+  content: '→'; position: absolute; left: 0;
+  color: var(--orange); font-weight: 700;
+}
+
+.info-card {
+  background: var(--off);
+  border-left: 4px solid var(--orange);
+  padding: 1.2rem 1.4rem;
+  margin: 1.5rem 0;
+  border-radius: 0 12px 12px 0;
+}
+.info-card p { margin-bottom: .5rem; font-size: .9rem; }
+.info-card p:last-child { margin-bottom: 0; }
+
+.warning-card {
+  background: rgba(244,96,12,.06);
+  border: 1.5px dashed var(--orange);
+  padding: 1.2rem 1.4rem;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+}
+.warning-card p { margin-bottom: 0; font-size: .88rem; color: var(--navy); }
+.warning-card strong { color: var(--orange); }
+
+.placeholder {
+  background: rgba(244,96,12,.12);
+  color: var(--orange);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: .85em;
+}
+
+.toc {
+  background: var(--navy-soft);
+  padding: 1.5rem 1.8rem;
+  border-radius: 16px;
+  margin-bottom: 3rem;
+}
+.toc-title {
+  font-size: .7rem; letter-spacing: .14em; text-transform: uppercase;
+  font-weight: 700; color: var(--muted); margin-bottom: .8rem;
+}
+.toc ol {
+  padding-left: 1.2rem; margin: 0;
+}
+.toc ol li {
+  font-size: .9rem; padding: .3rem 0; color: var(--text);
+}
+.toc ol li a {
+  color: var(--navy); text-decoration: none;
+  transition: color .2s;
+}
+.toc ol li a:hover { color: var(--orange); }
+
+footer {
+  background: linear-gradient(160deg, #060f1e 0%, var(--navy) 50%, #0a1a30 100%);
+  color: #fff; padding: 2.5rem 4rem;
+  text-align: center;
+}
+footer p {
+  color: rgba(255,255,255,.5); font-size: .8rem;
+  margin-bottom: .5rem;
+}
+footer a { color: var(--orange); font-weight: 600; }
+
+@media (max-width: 768px) {
+  nav { padding: 0 1.5rem; }
+  main { padding: 0 1.5rem 3rem; margin: 2rem auto; }
+  footer { padding: 2rem 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+<nav role="navigation" aria-label="Navigation principale">
+  <a href="index.html" class="nav-logo" aria-label="al.code-design — accueil">
+    <svg viewBox="0 0 220 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="0" y="28" style="font-family:'Fraunces',Georgia,serif;font-weight:900;font-size:28px;fill:#0f2240;letter-spacing:-0.02em;">al</text>
+      <circle cx="34" cy="25" r="4.5" fill="#f4600c"/>
+      <text x="42" y="28" style="font-family:'Fraunces',Georgia,serif;font-weight:900;font-size:28px;fill:#0f2240;letter-spacing:-0.02em;">code-design</text>
+    </svg>
+  </a>
+  <a href="index.html" class="nav-back">← Retour au site</a>
+</nav>
+
+<main id="main-content">
+
+  <div class="page-header">
+    <span class="section-tag">Informations légales</span>
+    <h1>Mentions légales</h1>
+    <p class="subtitle">Dernière mise à jour : <span class="placeholder">[DATE]</span></p>
+  </div>
+
+  <div class="warning-card" role="note">
+    <p>⚠️ <strong>Page en cours de finalisation</strong> — Les informations marquées <span class="placeholder">[À COMPLÉTER]</span> seront remplies dès la finalisation de l'inscription en auto-entrepreneur (réception du SIRET).</p>
+  </div>
+
+  <nav class="toc" aria-label="Sommaire">
+    <p class="toc-title">Sommaire</p>
+    <ol>
+      <li><a href="#editeur">Éditeur du site</a></li>
+      <li><a href="#hebergeur">Hébergeur</a></li>
+      <li><a href="#propriete">Propriété intellectuelle</a></li>
+      <li><a href="#donnees">Données personnelles & RGPD</a></li>
+      <li><a href="#cookies">Cookies</a></li>
+      <li><a href="#responsabilite">Limitations de responsabilité</a></li>
+      <li><a href="#contact">Contact & réclamations</a></li>
+      <li><a href="#droit">Droit applicable</a></li>
+    </ol>
+  </nav>
+
+  <section id="editeur">
+    <h2>1. Éditeur du site</h2>
+    <div class="info-card">
+      <p><strong>Nom commercial :</strong> al.code-design</p>
+      <p><strong>Responsable de publication :</strong> <span class="placeholder">[PRÉNOM NOM]</span></p>
+      <p><strong>Statut juridique :</strong> Entrepreneur individuel — Micro-entrepreneur</p>
+      <p><strong>SIRET :</strong> <span class="placeholder">[À COMPLÉTER après inscription URSSAF]</span></p>
+      <p><strong>Code APE :</strong> <span class="placeholder">62.01Z</span> (Programmation informatique)</p>
+      <p><strong>Adresse :</strong> <span class="placeholder">[ADRESSE COMPLÈTE]</span></p>
+      <p><strong>Email :</strong> <a href="mailto:al.code13@outlook.fr">al.code13@outlook.fr</a></p>
+      <p><strong>TVA :</strong> TVA non applicable, article 293 B du Code général des impôts</p>
+    </div>
+  </section>
+
+  <section id="hebergeur">
+    <h2>2. Hébergeur</h2>
+    <p>Ce site est hébergé par :</p>
+    <div class="info-card">
+      <p><strong>GitHub Pages</strong> — GitHub, Inc.</p>
+      <p><strong>Adresse :</strong> 88 Colin P Kelly Jr Street, San Francisco, CA 94107, États-Unis</p>
+      <p><strong>Site web :</strong> <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com</a></p>
+      <p><strong>Politique de confidentialité de l'hébergeur :</strong> <a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">docs.github.com/site-policy</a></p>
+    </div>
+    <p style="font-size: .85rem; color: var(--muted);">L'hébergement par GitHub Pages implique un transfert de données hors Union Européenne. GitHub est certifié sous le cadre <strong>Data Privacy Framework</strong> (DPF) entre l'UE et les États-Unis, ce qui garantit un niveau de protection équivalent au RGPD.</p>
+  </section>
+
+  <section id="propriete">
+    <h2>3. Propriété intellectuelle</h2>
+    <p>L'ensemble du contenu du site al.code-design (textes, graphismes, logo, icônes, images, code source, mise en page) est la propriété exclusive de <span class="placeholder">[PRÉNOM NOM]</span>, sauf mention contraire.</p>
+    <p>Toute reproduction, représentation, modification, publication, transmission, totale ou partielle, sous quelque forme que ce soit, est interdite sans autorisation écrite préalable.</p>
+    <p>Toute exploitation non autorisée du site ou de l'un quelconque des éléments qu'il contient sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux articles <strong>L.335-2 et suivants du Code de la propriété intellectuelle</strong>.</p>
+    <h3>Polices et bibliothèques utilisées</h3>
+    <ul>
+      <li><strong>Plus Jakarta Sans</strong> & <strong>Fraunces</strong> — licence Open Font License (OFL), Google Fonts</li>
+      <li><strong>EmailJS</strong> — service tiers utilisé pour l'envoi des formulaires (politique : <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">emailjs.com/legal/privacy-policy</a>)</li>
+    </ul>
+  </section>
+
+  <section id="donnees">
+    <h2>4. Données personnelles & RGPD</h2>
+    <p>Conformément au <strong>Règlement Général sur la Protection des Données (RGPD - UE 2016/679)</strong> et à la <strong>loi Informatique et Libertés du 6 janvier 1978</strong> modifiée, voici les informations relatives au traitement de vos données personnelles.</p>
+
+    <h3>4.1 Responsable de traitement</h3>
+    <p><span class="placeholder">[PRÉNOM NOM]</span>, en qualité d'éditeur du site al.code-design, est responsable du traitement de vos données personnelles. Contact : <a href="mailto:al.code13@outlook.fr">al.code13@outlook.fr</a></p>
+
+    <h3>4.2 Données collectées via le formulaire de contact</h3>
+    <p>Lorsque vous remplissez le formulaire de demande de devis, les données suivantes sont collectées :</p>
+    <ul>
+      <li>Prénom et nom</li>
+      <li>Adresse email</li>
+      <li>Secteur d'activité</li>
+      <li>Budget envisagé</li>
+      <li>Délai souhaité</li>
+      <li>Message libre</li>
+    </ul>
+
+    <h3>4.3 Finalité du traitement</h3>
+    <p>Vos données sont collectées pour :</p>
+    <ul>
+      <li>Répondre à votre demande de devis</li>
+      <li>Établir une relation commerciale si vous le souhaitez</li>
+      <li>Conserver une trace de notre échange en cas de question ultérieure</li>
+    </ul>
+
+    <h3>4.4 Base légale</h3>
+    <p>Le traitement repose sur <strong>votre consentement</strong> (article 6.1.a du RGPD), exprimé par l'envoi volontaire du formulaire, ainsi que sur des <strong>mesures pré-contractuelles</strong> prises à votre demande (article 6.1.b).</p>
+
+    <h3>4.5 Destinataires des données</h3>
+    <p>Vos données sont accessibles à :</p>
+    <ul>
+      <li><span class="placeholder">[PRÉNOM NOM]</span>, responsable de traitement, seul destinataire des données saisies</li>
+      <li><strong>EmailJS</strong> (sous-traitant technique) qui assure la transmission du formulaire — siège aux États-Unis, conforme au Data Privacy Framework</li>
+      <li><strong>Microsoft Outlook</strong> (boîte mail réceptrice) — Microsoft Corporation, conforme au DPF</li>
+    </ul>
+    <p>Vos données ne sont <strong>jamais vendues, louées ou partagées</strong> à des fins commerciales avec des tiers.</p>
+
+    <h3>4.6 Durée de conservation</h3>
+    <ul>
+      <li><strong>Demandes de devis non converties</strong> : 3 ans à compter du dernier échange</li>
+      <li><strong>Demandes ayant abouti à un contrat</strong> : 10 ans (obligation comptable et commerciale)</li>
+    </ul>
+
+    <h3>4.7 Vos droits</h3>
+    <p>Vous disposez à tout moment des droits suivants (articles 15 à 22 du RGPD) :</p>
+    <ul>
+      <li><strong>Droit d'accès</strong> — savoir quelles données nous détenons sur vous</li>
+      <li><strong>Droit de rectification</strong> — corriger des informations inexactes</li>
+      <li><strong>Droit à l'effacement</strong> ("droit à l'oubli") — demander la suppression de vos données</li>
+      <li><strong>Droit à la limitation du traitement</strong> — restreindre temporairement l'utilisation</li>
+      <li><strong>Droit à la portabilité</strong> — recevoir vos données dans un format réutilisable</li>
+      <li><strong>Droit d'opposition</strong> — refuser le traitement de vos données</li>
+      <li><strong>Droit de retirer votre consentement</strong> à tout moment</li>
+    </ul>
+    <p>Pour exercer ces droits, envoyez un email à <a href="mailto:al.code13@outlook.fr">al.code13@outlook.fr</a> avec une copie d'une pièce d'identité. Une réponse vous sera apportée sous <strong>30 jours maximum</strong>.</p>
+
+    <h3>4.8 Recours auprès de la CNIL</h3>
+    <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la <strong>Commission Nationale de l'Informatique et des Libertés (CNIL)</strong> :</p>
+    <div class="info-card">
+      <p><strong>CNIL</strong> — 3 Place de Fontenoy, TSA 80715, 75334 PARIS CEDEX 07</p>
+      <p><strong>Téléphone :</strong> 01 53 73 22 22</p>
+      <p><strong>Site :</strong> <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">www.cnil.fr</a></p>
+    </div>
+  </section>
+
+  <section id="cookies">
+    <h2>5. Cookies</h2>
+    <p>Le site al.code-design utilise un <strong>nombre minimal de cookies et technologies de stockage local</strong>, uniquement pour les fonctionnalités essentielles. <strong>Aucun cookie de traçage publicitaire ni d'analyse comportementale</strong> n'est utilisé.</p>
+
+    <h3>5.1 Cookies utilisés</h3>
+    <ul>
+      <li><strong>sessionStorage "promoActive"</strong> — Mémorise si vous avez cliqué sur "Demander mon devis avec remise" pour pré-cocher l'option sur le formulaire. Durée : fermeture de l'onglet. <strong>Strictement nécessaire</strong> au fonctionnement, exempté du consentement (article 82 LCEN).</li>
+    </ul>
+
+    <h3>5.2 Cookies de tiers</h3>
+    <p>Le site ne charge <strong>aucun service tiers à des fins de tracking</strong> : ni Google Analytics, ni Facebook Pixel, ni publicité, ni réseaux sociaux par défaut.</p>
+    <p>Seul <strong>Google Fonts</strong> est appelé pour charger les polices d'écriture (Fraunces et Plus Jakarta Sans). Cette requête peut être journalisée par Google. Pour éviter toute communication avec Google, vous pouvez bloquer le domaine fonts.googleapis.com dans votre navigateur ou utiliser une extension comme uBlock Origin.</p>
+  </section>
+
+  <section id="responsabilite">
+    <h2>6. Limitations de responsabilité</h2>
+    <p>L'éditeur du site s'efforce d'assurer au mieux de ses possibilités l'exactitude et la mise à jour des informations diffusées, dont il se réserve le droit de modifier le contenu à tout moment.</p>
+    <p>Les informations fournies (tarifs, délais, fonctionnalités) sont données à titre indicatif et peuvent évoluer. Seul le devis personnalisé qui vous sera envoyé fait foi entre les parties.</p>
+    <p>L'éditeur ne saurait être tenu responsable :</p>
+    <ul>
+      <li>Des erreurs ou omissions dans les informations diffusées</li>
+      <li>De l'impossibilité d'accéder temporairement au site</li>
+      <li>De l'utilisation faite des informations du site par des tiers</li>
+      <li>Des dommages indirects résultant de l'utilisation du site</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>7. Contact & réclamations</h2>
+    <p>Pour toute question relative aux présentes mentions légales, à la protection de vos données, ou à l'exercice de vos droits :</p>
+    <div class="info-card">
+      <p><strong>Email :</strong> <a href="mailto:al.code13@outlook.fr">al.code13@outlook.fr</a></p>
+      <p><strong>Délai de réponse :</strong> 36 heures ouvrées maximum</p>
+    </div>
+  </section>
+
+  <section id="droit">
+    <h2>8. Droit applicable</h2>
+    <p>Les présentes mentions légales sont régies par le <strong>droit français</strong>. En cas de litige et à défaut de résolution amiable, les <strong>tribunaux français seront seuls compétents</strong>.</p>
+    <p>Conformément aux dispositions des articles L.616-1 et R.616-1 du Code de la consommation, vous pouvez recourir gratuitement au service de médiation de la consommation. La plateforme européenne de règlement en ligne des litiges est accessible ici : <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">ec.europa.eu/consumers/odr</a></p>
+  </section>
+
+  <div class="warning-card" style="margin-top: 3rem;" role="note">
+    <p>📝 <strong>À faire après obtention du SIRET :</strong> remplacer tous les <span class="placeholder">[placeholders]</span> par vos vraies informations. Mettre à jour la date en haut de page. Vérifier que l'adresse email principale est cohérente sur toutes les sections.</p>
+  </div>
+
+</main>
+
+<footer role="contentinfo">
+  <p>© 2026 al.code-design — Tous droits réservés</p>
+  <p><a href="index.html">← Retour au site</a></p>
+</footer>
+
+</body>
+</html>
