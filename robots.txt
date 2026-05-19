@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /mentions-legales.html
 
-Sitemap: https://al-code-design.github.io/sitemap.xml
+Sitemap: https://aldesagn.fr/sitemap.xml
